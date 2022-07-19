@@ -55,6 +55,31 @@ header {
   color: white;
   margin-top: 30px;
   border: none;
+  position: relative;
+}
+
+.header-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(9, 192, 131, 0.356);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.header-btn:hover::before {
+  transform: scaleX(1);
+  z-index: 1;
+}
+
+.header-btn:hover {
+  cursor: pointer;
 }
 
 .header-btn i {
