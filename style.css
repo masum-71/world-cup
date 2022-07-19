@@ -1,61 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    max-width: 1250px;
-    margin: 0 auto;
+body {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
-    /* header section start here */
+/* header section start here */
 
-header{
-    width: 100%;
-    height: 640px;
-    background-color: #161616;
-    border-radius: 30px;
+header {
+  width: 100%;
+  height: 640px;
+  background-color: #161616;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header-detail {
+  width: 531px;
+  height: 424px;
+  color: white;
+  margin: 111px 20px 111px 100px;
+  padding-right: 25px;
+}
+
+.header-detail h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.header-banner img {
+  width: 581px;
+  height: 613px;
+}
+
+.header-btn {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 16px 25px;
+  text-align: center;
+  background-color: #dd0000;
+  border-radius: 5px;
+  color: white;
+  margin-top: 30px;
+  border: none;
+}
+.header-btn i {
+  margin-left: 10px;
+}
+
+/* header section end here */
+
+/* main section start here */
+
+/* nav start here */
+
+main{
+    margin: 130px 0;
     display: flex;
+}
+
+nav{
+    width: 280px;
+    height: 300px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top:50px ;
+    padding: 15px;
+    margin-right: 24px;
 }
 
-.header-detail{
-    width: 531px;
-    height: 424px;
-    color: white;
-    margin: 111px 20px 111px 100px;
-    padding-right: 25px;
-}
-
-.header-detail h1{
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 80px;
-}
-
-.description{
-    margin-top: 10px;
-}
-
-.header-banner img{
-    width: 581px;
-    height: 613px;
-}
-
-.header-btn{
-    font-size: 20px;
-    font-weight: 400;
-    padding: 16px 25px;
+nav button{
     text-align: center;
-    background-color: #DD0000;
-    border-radius: 5px;
-    color: white;
-    margin-top: 30px;
-    border: none;
+    width: 230px;
+    height: 60px;
+    margin: 15px;
+    border-radius: 10px;
+    border: none ;
+    font-size: 20px;
+    font-weight: 500;
 }
-.header-btn i{
-    margin-left: 10px;
+
+nav button a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    background-color: #dd0000;
+    color: white;
+}
+
+.active a{
+    color: white;
+}
+
+/* nav end here */
+
+/* blogs start here */
+
+.blogs{
+    flex-grow: 1;
+}
+
+.blog{
+    
 }
