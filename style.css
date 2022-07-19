@@ -230,3 +230,78 @@ hr {
 }
 
 /* footer end here */
+
+/* Media Query start here */
+
+@media screen and (max-width: 576px) {
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .header-detail {
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 50px 50px;
+    text-align: center;
+  }
+
+  .header-detail h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .header-banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* nav start here */
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    background-color: transparent;
+    margin-right: 0;
+  }
+
+  nav button {
+    border: 1px solid rgba(128, 128, 128, 0.486);
+  }
+  /* nav end here */
+
+  /* blog start here */
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* blog end here */
+  footer {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .name h2 {
+    height: auto;
+  }
+  .info ul {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .info ul li {
+    margin: 20px 0;
+  }
+
+  /* footer end here */
+}
